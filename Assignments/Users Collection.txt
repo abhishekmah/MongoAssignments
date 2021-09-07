@@ -1,0 +1,448 @@
+---
+> use assignment
+switched to db assignment
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+ninjas  0.000GB
+> db.assignment.createCollection('users')
+uncaught exception: TypeError: db.assignment.createCollection is not a function :
+@(shell):1:1
+> db.createCollection('users')
+{ "ok" : 1 }
+> show collections
+users
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+ninjas      0.000GB
+> db.users.insert({ first_name: "Abhishek", last_name: "Mahato"})
+WriteResult({ "nInserted" : 1 })
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("61379029b80d016c5ae7d26d"),
+        "first_name" : "Abhishek",
+        "last_name" : "Mahato"
+}
+> db.users.insertMany({ first_name: "Abhijeet", last_name: "Mahato"}, { first_name: "ram", last_name: "kumar" },{ first_name: "jack", last_name: "grelish"}, { first_name: "wayne", last_name: "rooney"}, { first_name: "Abhijeet", last_name: "Mahato"}, { first_name: "toni", last_name: "kroos", email: "toni@gmail.com", ip_address: 10021})
+uncaught exception: TypeError: documents.map is not a function :
+DBCollection.prototype.insertMany@src/mongo/shell/crud_api.js:307:17
+@(shell):1:1
+> db.users.insertMany([{ first_name: "Abhijeet", last_name: "Mahato"}, { first_name: "ram", last_name: "kumar" },{ first_name: "jack", last_name: "grelish"}, { first_name: "wayne", last_name: "rooney"}, { first_name: "Abhijeet", last_name: "Mahato"}, { first_name: "toni", last_name: "kroos", email: "toni@gmail.com", ip_address: 10021}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("6137961bb80d016c5ae7d26e"),
+                ObjectId("6137961bb80d016c5ae7d26f"),
+                ObjectId("6137961bb80d016c5ae7d270"),
+                ObjectId("6137961bb80d016c5ae7d271"),
+                ObjectId("6137961bb80d016c5ae7d272"),
+                ObjectId("6137961bb80d016c5ae7d273")
+        ]
+}
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("61379029b80d016c5ae7d26d"),
+        "first_name" : "Abhishek",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26f"),
+        "first_name" : "ram",
+        "last_name" : "kumar"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d270"),
+        "first_name" : "jack",
+        "last_name" : "grelish"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+> db.users.find({{ first_name: "Abhijeet", last_name: "Mahato"}}).pretty()
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:15
+> db.users.find({ first_name: "Abhijeet", last_name: "Mahato"}).pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato"
+}
+> db.users.update({ first_name: "Abhijeet", last_name: "Mahato"}, {$set: { first_name: "Abhijeet", last_name: "Mahato", email: "abhijeet@gmail.com", gender: "male", age: 21}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({ first_name: "Abhijeet", last_name: "Mahato"}).pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato"
+}
+> db.users.updateMany({ first_name: "Abhijeet", last_name: "Mahato"}, {$set: { first_name: "Abhijeet", last_name: "Mahato", email: "abhijeet@gmail.com", gender: "male", age: 21}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 1 }
+>
+>
+> db.users.find({ first_name: "Abhijeet", last_name: "Mahato"}).pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("61379029b80d016c5ae7d26d"),
+        "first_name" : "Abhishek",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26f"),
+        "first_name" : "ram",
+        "last_name" : "kumar"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d270"),
+        "first_name" : "jack",
+        "last_name" : "grelish"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+> db.help()
+DB methods:
+        db.adminCommand(nameOrDocument) - switches to 'admin' db, and runs command [just calls db.runCommand(...)]
+        db.aggregate([pipeline], {options}) - performs a collectionless aggregation on this database; returns a cursor
+        db.auth(username, password)
+        db.commandHelp(name) returns the help for the command
+        db.createUser(userDocument)
+        db.createView(name, viewOn, [{$operator: {...}}, ...], {viewOptions})
+        db.currentOp() displays currently executing operations in the db
+        db.dropDatabase(writeConcern)
+        db.dropUser(username)
+        db.eval() - deprecated
+        db.fsyncLock() flush data to disk and lock server for backups
+        db.fsyncUnlock() unlocks server following a db.fsyncLock()
+        db.getCollection(cname) same as db['cname'] or db.cname
+        db.getCollectionInfos([filter]) - returns a list that contains the names and options of the db's collections
+        db.getCollectionNames()
+        db.getLastError() - just returns the err msg string
+        db.getLastErrorObj() - return full status object
+        db.getLogComponents()
+        db.getMongo() get the server connection object
+        db.getMongo().setSecondaryOk() allow queries on a replication secondary server
+        db.getName()
+        db.getProfilingLevel() - deprecated
+        db.getProfilingStatus() - returns if profiling is on and slow threshold
+        db.getReplicationInfo()
+        db.getSiblingDB(name) get the db at the same server as this one
+        db.getWriteConcern() - returns the write concern used for any operations on this db, inherited from server object if set
+        db.hostInfo() get details about the server's host
+        db.isMaster() check replica primary status
+        db.hello() check replica primary status
+        db.killOp(opid) kills the current operation in the db
+        db.listCommands() lists all the db commands
+        db.loadServerScripts() loads all the scripts in db.system.js
+        db.logout()
+        db.printCollectionStats()
+        db.printReplicationInfo()
+        db.printShardingStatus()
+        db.printSecondaryReplicationInfo()
+        db.rotateCertificates(message) - rotates certificates, CRLs, and CA files and logs an optional message
+        db.runCommand(cmdObj) run a database command.  if cmdObj is a string, turns it into {cmdObj: 1}
+        db.serverStatus()
+        db.setLogLevel(level,<component>)
+        db.setProfilingLevel(level,slowms) 0=off 1=slow 2=all
+        db.setVerboseShell(flag) display extra information in shell output
+        db.setWriteConcern(<write concern doc>) - sets the write concern for writes to the db
+        db.shutdownServer()
+        db.stats()
+        db.unsetWriteConcern(<write concern doc>) - unsets the write concern for writes to the db
+        db.version() current version of the server
+        db.watch() - opens a change stream cursor for a database to report on all  changes to its non-system collections.
+>
+>
+>
+> db.users.remove({"_id" : ObjectId("6137961bb80d016c5ae7d270")})
+WriteResult({ "nRemoved" : 1 })
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("61379029b80d016c5ae7d26d"),
+        "first_name" : "Abhishek",
+        "last_name" : "Mahato"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26f"),
+        "first_name" : "ram",
+        "last_name" : "kumar"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+>
+>
+>
+>
+>
+>
+> db.users.deleteOne( "_id" : ObjectId("61379029b80d016c5ae7d26d"))
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:26
+> db.users.deleteOne( "_id" : ObjectId("61379029b80d016c5ae7d26d"))
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:26
+>
+>
+>
+> db.users.deleteOne({ "_id" : ObjectId("61379029b80d016c5ae7d26d")})
+{ "acknowledged" : true, "deletedCount" : 1 }
+>
+>
+>
+>
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26f"),
+        "first_name" : "ram",
+        "last_name" : "kumar"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+>
+>
+> db.users.deleteMany({ "_id" : ObjectId("6137961bb80d016c5ae7d26f")}, { "_id" : ObjectId("6137961bb80d016c5ae7d271")})
+{ "acknowledged" : true, "deletedCount" : 1 }
+>
+>
+>
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d26e"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+> db.users.deleteMany([{ "_id" : ObjectId("6137961bb80d016c5ae7d26e")}, { "_id" : ObjectId("6137961bb80d016c5ae7d271")}])
+uncaught exception: WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "BSON field 'delete.deletes.q' is the wrong type 'array', expected type 'object'",
+        "code" : 14,
+        "codeName" : "TypeMismatch"
+}) :
+WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "BSON field 'delete.deletes.q' is the wrong type 'array', expected type 'object'",
+        "code" : 14,
+        "codeName" : "TypeMismatch"
+})
+WriteCommandError@src/mongo/shell/bulk_api.js:421:48
+executeBatch@src/mongo/shell/bulk_api.js:936:23
+Bulk/this.execute@src/mongo/shell/bulk_api.js:1182:21
+DBCollection.prototype.deleteMany@src/mongo/shell/crud_api.js:432:17
+@(shell):1:1
+>
+>
+>
+>
+>
+> db.users.deleteMany({"_id" : ObjectId("6137961bb80d016c5ae7d26e")}, { "_id" : ObjectId("6137961bb80d016c5ae7d271")})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d271"),
+        "first_name" : "wayne",
+        "last_name" : "rooney"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d272"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Mahato",
+        "age" : 21,
+        "email" : "abhijeet@gmail.com",
+        "gender" : "male"
+}
+{
+        "_id" : ObjectId("6137961bb80d016c5ae7d273"),
+        "first_name" : "toni",
+        "last_name" : "kroos",
+        "email" : "toni@gmail.com",
+        "ip_address" : 10021
+}
+>
+>
+>
+>
+>
+>
+> db.users.deleteMany([{ "_id" : ObjectId("6137961bb80d016c5ae7d272")}, { "_id" : ObjectId("6137961bb80d016c5ae7d271")}])
+uncaught exception: WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "BSON field 'delete.deletes.q' is the wrong type 'array', expected type 'object'",
+        "code" : 14,
+        "codeName" : "TypeMismatch"
+}) :
+WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "BSON field 'delete.deletes.q' is the wrong type 'array', expected type 'object'",
+        "code" : 14,
+        "codeName" : "TypeMismatch"
+})
+WriteCommandError@src/mongo/shell/bulk_api.js:421:48
+executeBatch@src/mongo/shell/bulk_api.js:936:23
+Bulk/this.execute@src/mongo/shell/bulk_api.js:1182:21
+DBCollection.prototype.deleteMany@src/mongo/shell/crud_api.js:432:17
+@(shell):1:1
+>
+>
+>
+> db.dropDatabase()
+{ "ok" : 1 }
+>
+>
+>
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+ninjas  0.000GB
+>
