@@ -34,9 +34,9 @@ const User = mongoose.model("user", userSchema)
 app.get("/users", async (req, res) => {
 
     try{
-        const users = await User.find({age: {$gt: 15}}).lean().exec();
+        const user = await User.find({age: {$gt: 15}}).lean().exec();
 
-        res.send(users);
+        res.send(user);
     }
     catch(err){
         res.status(400).json({ status: "error", message: err.message})
@@ -69,7 +69,7 @@ app.patch("/users/:id", async (req, res) => {
 app.get("/users/:id", async (req, res) => {
 
     try{
-        const users = await User.findById(req.params.id).lean().exec();
+        const user = await User.findById(req.params.id).lean().exec();
 
         res.status(200).json({user});
     }
