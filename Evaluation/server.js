@@ -34,9 +34,10 @@ app.get("/students", async (req, res) => {
     try{
         const student = await Student.find().lean().exec();
 
+        res.send(student);
         // const student = await Student.find({age: {$gt: 18}}).lean().exec();
 
-        
+
         // const student = await Student.find({"course":"full stack web development"}).lean().exec();
 
 
@@ -62,29 +63,38 @@ app.get("/students", async (req, res) => {
         // {
         //     res.send({"web 3": num1});
         // }
+
     }
     catch(err){
         res.status(400).json({ status: "error", message: err.message})
         }
 });
-app.get("/students/:age", async (req, res) => {
+app.get("/students/:data", async (req, res) => {
 
     try{
-        const student = await Student.find({"batch": "app 3"}).lean().exec();
-        
-        const student1 = await Student.find({"batch": "web 3"}).lean().exec();
+        const student = await Student.find({"instructor": "Dhaval"}).lean().exec();
+        const student1 = await Student.find({"instructor": "Nrupul"}).lean().exec();
+        const student2 = await Student.find({"instructor": "Aman"}).lean().exec();
 
         let num = Object.keys(student).length;
         let num1 = Object.keys(student1).length;
+        let num2 = Object.keys(student2).length;
         
-        if(num>num1)
-        {
-            res.send({"app 3": num});
+        let arr = {
+            Dhaval: num,
+            Nrupul: num1,
+            Aman: num2,    
         }
-        else
-        {
-            res.send({"web 3": num1});
+
+        let name;
+        let temp = 0;
+        for(key in arr) {
+            if(arr[key] > temp){
+                temp = arr[key];
+                name = key;
+            }
         }
+        res.send({"instructor teaching most students": name});
     }
     catch(err){
         res.status(400).json({ status: "error", message: err.message})
