@@ -34,7 +34,57 @@ app.get("/students", async (req, res) => {
     try{
         const student = await Student.find().lean().exec();
 
-        res.send(student);
+        // const student = await Student.find({age: {$gt: 18}}).lean().exec();
+
+        
+        // const student = await Student.find({"course":"full stack web development"}).lean().exec();
+
+
+        // const student = await Student.find({"gender": "Male"}).lean().exec();
+        // const student1 = await Student.find({"gender": "Female"}).lean().exec();
+        // let num = Object.keys(student).length;
+        // let num1 = Object.keys(student1).length;
+        // res.send({"Number of Male students": num, "Number of Female students": num1, "Number of Total students": num + num1});
+
+
+        // const student = await Student.find({"batch": "app 3"}).lean().exec();
+        
+        // const student1 = await Student.find({"batch": "web 3"}).lean().exec();
+
+        // let num = Object.keys(student).length;
+        // let num1 = Object.keys(student1).length;
+        
+        // if(num>num1)
+        // {
+        //     res.send({"app 3": num});
+        // }
+        // else
+        // {
+        //     res.send({"web 3": num1});
+        // }
+    }
+    catch(err){
+        res.status(400).json({ status: "error", message: err.message})
+        }
+});
+app.get("/students/:age", async (req, res) => {
+
+    try{
+        const student = await Student.find({"batch": "app 3"}).lean().exec();
+        
+        const student1 = await Student.find({"batch": "web 3"}).lean().exec();
+
+        let num = Object.keys(student).length;
+        let num1 = Object.keys(student1).length;
+        
+        if(num>num1)
+        {
+            res.send({"app 3": num});
+        }
+        else
+        {
+            res.send({"web 3": num1});
+        }
     }
     catch(err){
         res.status(400).json({ status: "error", message: err.message})
@@ -50,7 +100,7 @@ app.post("/students", async (req, res) => {
     }
     catch(err){
         res.status(400).json({ status: "error", message: err.message})
-        }
+    }
 });
 
 app.listen(2345, async function() {
