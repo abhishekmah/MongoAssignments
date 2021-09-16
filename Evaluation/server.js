@@ -32,13 +32,13 @@ const Student = mongoose.model("student", studentSchema)
 app.get("/students", async (req, res) => {
 
     try{
-        const student = await Student.find().lean().exec();
-
-        res.send(student);
+        // const student = await Student.find().lean().exec();
         // const student = await Student.find({age: {$gt: 18}}).lean().exec();
-
-
-        // const student = await Student.find({"course":"full stack web development"}).lean().exec();
+        
+        
+        
+        const student = await Student.find({"course":"full stack web development"}).lean().exec();
+        res.send(student);
 
 
         // const student = await Student.find({"gender": "Male"}).lean().exec();
