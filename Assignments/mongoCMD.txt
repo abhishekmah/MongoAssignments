@@ -1,0 +1,2271 @@
+ db.users.find({movie})
+uncaught exception: ReferenceError: movie is not defined :
+@(shell):1:16
+> db.movie.find().pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+Type "it" for more
+> it
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e4"),
+        "movie" : "Blonde Ambition",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1999,
+        "budget" : 13427
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e5"),
+        "movie" : "Truth About Emanuel, The",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 1984,
+        "budget" : 17596
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"),
+        "movie" : "Canon",
+        "movie_genre" : "Animation",
+        "year" : 2006,
+        "budget" : 17160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e7"),
+        "movie" : "Six in Paris (Paris vu par...)",
+        "movie_genre" : "Drama|Romance",
+        "year" : 1995,
+        "budget" : 10154
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"),
+        "movie" : "Room at the Top",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 10936
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e9"),
+        "movie" : "Dikkenek",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 9906
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1eb"),
+        "movie" : "Porn Theater (Chatte à deux têtes, La)",
+        "movie_genre" : "Drama",
+        "year" : 2012,
+        "budget" : 9160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"),
+        "movie" : "Times of Harvey Milk, The",
+        "movie_genre" : "Documentary",
+        "year" : 2008,
+        "budget" : 15074
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ed"),
+        "movie" : "Salaam Bombay!",
+        "movie_genre" : "Drama",
+        "year" : 1989,
+        "budget" : 17229
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ee"),
+        "movie" : "Perfume of the Lady in Black, The (Il profumo della signora in nero)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "year" : 1999,
+        "budget" : 11029
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"),
+        "movie" : "Rugrats Go Wild!",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "year" : 2001,
+        "budget" : 11088
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f1"),
+        "movie" : "I Love Sarah Jane",
+        "movie_genre" : "Horror|Romance",
+        "year" : 2012,
+        "budget" : 16488
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f3"),
+        "movie" : "The Little Kidnappers",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1986,
+        "budget" : 13326
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"),
+        "movie" : "London - The Modern Babylon ",
+        "movie_genre" : "Documentary",
+        "year" : 2009,
+        "budget" : 16220
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f5"),
+        "movie" : "Roommates",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1986,
+        "budget" : 11007
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"),
+        "movie" : "Calling Dr. Gillespie",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "year" : 2002,
+        "budget" : 13665
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f7"),
+        "movie" : "Sadie Thompson",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 17297
+}
+Type "it" for more
+> db.movie.find({movie: "Carny"})
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"), "movie" : "Carny", "movie_genre" : "Drama", "year" : 2007, "budget" : 16190 }
+> db.movie.find({movie: "Carny"}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+> db.movie.find({movie: {$ne: "Carny"}}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+Type "it" for more
+> db.movie.find({budget; {$gt: 15000}}).pretty()
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:21
+> db.movie.find({budget: {$gt: 15000}}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e5"),
+        "movie" : "Truth About Emanuel, The",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 1984,
+        "budget" : 17596
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"),
+        "movie" : "Canon",
+        "movie_genre" : "Animation",
+        "year" : 2006,
+        "budget" : 17160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"),
+        "movie" : "Times of Harvey Milk, The",
+        "movie_genre" : "Documentary",
+        "year" : 2008,
+        "budget" : 15074
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ed"),
+        "movie" : "Salaam Bombay!",
+        "movie_genre" : "Drama",
+        "year" : 1989,
+        "budget" : 17229
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f1"),
+        "movie" : "I Love Sarah Jane",
+        "movie_genre" : "Horror|Romance",
+        "year" : 2012,
+        "budget" : 16488
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"),
+        "movie" : "London - The Modern Babylon ",
+        "movie_genre" : "Documentary",
+        "year" : 2009,
+        "budget" : 16220
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f7"),
+        "movie" : "Sadie Thompson",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 17297
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f8"),
+        "movie" : "Made in America",
+        "movie_genre" : "Comedy",
+        "year" : 2007,
+        "budget" : 16863
+}
+Type "it" for more
+> db.movie.find({budget: {$lt: 15000}}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e4"),
+        "movie" : "Blonde Ambition",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1999,
+        "budget" : 13427
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e7"),
+        "movie" : "Six in Paris (Paris vu par...)",
+        "movie_genre" : "Drama|Romance",
+        "year" : 1995,
+        "budget" : 10154
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"),
+        "movie" : "Room at the Top",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 10936
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e9"),
+        "movie" : "Dikkenek",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 9906
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1eb"),
+        "movie" : "Porn Theater (Chatte à deux têtes, La)",
+        "movie_genre" : "Drama",
+        "year" : 2012,
+        "budget" : 9160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ee"),
+        "movie" : "Perfume of the Lady in Black, The (Il profumo della signora in nero)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "year" : 1999,
+        "budget" : 11029
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"),
+        "movie" : "Rugrats Go Wild!",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "year" : 2001,
+        "budget" : 11088
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f3"),
+        "movie" : "The Little Kidnappers",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1986,
+        "budget" : 13326
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f5"),
+        "movie" : "Roommates",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1986,
+        "budget" : 11007
+}
+Type "it" for more
+> db.movie.find({year: {$gt: 2000}, budget: {$gt: 10000}})
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"), "movie" : "Killer Meteors, The (Feng yu shuang liu xing)", "movie_genre" : "Action|Thriller", "year" : 2003, "budget" : 12626 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"), "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)", "movie_genre" : "Animation|Comedy|Musical", "year" : 2001, "budget" : 10092 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"), "movie" : "Kaboom", "movie_genre" : "Comedy|Sci-Fi", "year" : 2011, "budget" : 17434 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"), "movie" : "Balloonatic, The", "movie_genre" : "Comedy", "year" : 2004, "budget" : 13863 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"), "movie" : "Islands in the Stream", "movie_genre" : "Drama", "year" : 2010, "budget" : 16218 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"), "movie" : "Park Avenue: Money, Power and the American Dream", "movie_genre" : "Documentary", "year" : 2002, "budget" : 16808 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"), "movie" : "Wonderful World of the Brothers Grimm, The", "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance", "year" : 2003, "budget" : 17901 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"), "movie" : "Casual Relations", "movie_genre" : "Drama", "year" : 2005, "budget" : 16490 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"), "movie" : "Paradise Now", "movie_genre" : "Crime|Drama|Thriller|War", "year" : 2012, "budget" : 11984 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"), "movie" : "Father of My Children, The (Le père de mes enfants)", "movie_genre" : "Drama", "year" : 2005, "budget" : 18843 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"), "movie" : "Canon", "movie_genre" : "Animation", "year" : 2006, "budget" : 17160 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"), "movie" : "Room at the Top", "movie_genre" : "Drama", "year" : 2008, "budget" : 10936 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"), "movie" : "ATL", "movie_genre" : "Drama", "year" : 2007, "budget" : 16417 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"), "movie" : "Times of Harvey Milk, The", "movie_genre" : "Documentary", "year" : 2008, "budget" : 15074 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"), "movie" : "9/11", "movie_genre" : "Documentary", "year" : 2006, "budget" : 10980 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"), "movie" : "Rugrats Go Wild!", "movie_genre" : "Adventure|Animation|Children|Comedy", "year" : 2001, "budget" : 11088 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f1"), "movie" : "I Love Sarah Jane", "movie_genre" : "Horror|Romance", "year" : 2012, "budget" : 16488 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"), "movie" : "Carny", "movie_genre" : "Drama", "year" : 2007, "budget" : 16190 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"), "movie" : "London - The Modern Babylon ", "movie_genre" : "Documentary", "year" : 2009, "budget" : 16220 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"), "movie" : "Calling Dr. Gillespie", "movie_genre" : "Crime|Drama|Thriller", "year" : 2002, "budget" : 13665 }
+Type "it" for more
+> db.movie.find({year: {$gt: 2000}, budget: {$gt: 10000}}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"),
+        "movie" : "Canon",
+        "movie_genre" : "Animation",
+        "year" : 2006,
+        "budget" : 17160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"),
+        "movie" : "Room at the Top",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 10936
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"),
+        "movie" : "Times of Harvey Milk, The",
+        "movie_genre" : "Documentary",
+        "year" : 2008,
+        "budget" : 15074
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"),
+        "movie" : "Rugrats Go Wild!",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "year" : 2001,
+        "budget" : 11088
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f1"),
+        "movie" : "I Love Sarah Jane",
+        "movie_genre" : "Horror|Romance",
+        "year" : 2012,
+        "budget" : 16488
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"),
+        "movie" : "London - The Modern Babylon ",
+        "movie_genre" : "Documentary",
+        "year" : 2009,
+        "budget" : 16220
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"),
+        "movie" : "Calling Dr. Gillespie",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "year" : 2002,
+        "budget" : 13665
+}
+Type "it" for more
+> db.movie.find({$or: [{year: {$gt: 2000}, budget: {$gt: 10000}}]}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"),
+        "movie" : "Canon",
+        "movie_genre" : "Animation",
+        "year" : 2006,
+        "budget" : 17160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"),
+        "movie" : "Room at the Top",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 10936
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"),
+        "movie" : "Times of Harvey Milk, The",
+        "movie_genre" : "Documentary",
+        "year" : 2008,
+        "budget" : 15074
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"),
+        "movie" : "Rugrats Go Wild!",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "year" : 2001,
+        "budget" : 11088
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f1"),
+        "movie" : "I Love Sarah Jane",
+        "movie_genre" : "Horror|Romance",
+        "year" : 2012,
+        "budget" : 16488
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"),
+        "movie" : "London - The Modern Babylon ",
+        "movie_genre" : "Documentary",
+        "year" : 2009,
+        "budget" : 16220
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"),
+        "movie" : "Calling Dr. Gillespie",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "year" : 2002,
+        "budget" : 13665
+}
+Type "it" for more
+> db.movie.find({$nor: [{year: {$gt: 2000}, budget: {$gt: 10000}}]}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e4"),
+        "movie" : "Blonde Ambition",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1999,
+        "budget" : 13427
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e5"),
+        "movie" : "Truth About Emanuel, The",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 1984,
+        "budget" : 17596
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e7"),
+        "movie" : "Six in Paris (Paris vu par...)",
+        "movie_genre" : "Drama|Romance",
+        "year" : 1995,
+        "budget" : 10154
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e9"),
+        "movie" : "Dikkenek",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 9906
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1eb"),
+        "movie" : "Porn Theater (Chatte à deux têtes, La)",
+        "movie_genre" : "Drama",
+        "year" : 2012,
+        "budget" : 9160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ed"),
+        "movie" : "Salaam Bombay!",
+        "movie_genre" : "Drama",
+        "year" : 1989,
+        "budget" : 17229
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ee"),
+        "movie" : "Perfume of the Lady in Black, The (Il profumo della signora in nero)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "year" : 1999,
+        "budget" : 11029
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f3"),
+        "movie" : "The Little Kidnappers",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1986,
+        "budget" : 13326
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f5"),
+        "movie" : "Roommates",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1986,
+        "budget" : 11007
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1fc"),
+        "movie" : "Epitaph",
+        "movie_genre" : "Horror",
+        "year" : 2000,
+        "budget" : 17412
+}
+Type "it" for more
+> db.movie.find({$nor: [{year: {$gt: 2000}, budget: {$gt: 10000}}]}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e4"),
+        "movie" : "Blonde Ambition",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1999,
+        "budget" : 13427
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e5"),
+        "movie" : "Truth About Emanuel, The",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 1984,
+        "budget" : 17596
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e7"),
+        "movie" : "Six in Paris (Paris vu par...)",
+        "movie_genre" : "Drama|Romance",
+        "year" : 1995,
+        "budget" : 10154
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e9"),
+        "movie" : "Dikkenek",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 9906
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1eb"),
+        "movie" : "Porn Theater (Chatte à deux têtes, La)",
+        "movie_genre" : "Drama",
+        "year" : 2012,
+        "budget" : 9160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ed"),
+        "movie" : "Salaam Bombay!",
+        "movie_genre" : "Drama",
+        "year" : 1989,
+        "budget" : 17229
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ee"),
+        "movie" : "Perfume of the Lady in Black, The (Il profumo della signora in nero)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "year" : 1999,
+        "budget" : 11029
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f3"),
+        "movie" : "The Little Kidnappers",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1986,
+        "budget" : 13326
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f5"),
+        "movie" : "Roommates",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1986,
+        "budget" : 11007
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1fc"),
+        "movie" : "Epitaph",
+        "movie_genre" : "Horror",
+        "year" : 2000,
+        "budget" : 17412
+}
+Type "it" for more
+> db.movie.find({$nor: {"year": 2000, "budget": 10000}})
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$nor must be an array",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.movie.find({$nor: [{"year": 2000, "budget": 10000}]})
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"), "movie" : "Alyce Kills", "movie_genre" : "Horror|Thriller", "year" : 1989, "budget" : 14172 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"), "movie" : "Christmas in Connecticut", "movie_genre" : "Comedy|Romance", "year" : 1995, "budget" : 15629 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"), "movie" : "Killer Meteors, The (Feng yu shuang liu xing)", "movie_genre" : "Action|Thriller", "year" : 2003, "budget" : 12626 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"), "movie" : "On the Riviera", "movie_genre" : "Comedy|Musical", "year" : 2008, "budget" : 9637 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"), "movie" : "7 Dwarves: The Forest Is Not Enough", "movie_genre" : "Comedy", "year" : 1995, "budget" : 12846 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"), "movie" : "Gambler, The", "movie_genre" : "Drama", "year" : 1996, "budget" : 13016 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"), "movie" : "Nueba Yol", "movie_genre" : "Comedy|Drama", "year" : 2002, "budget" : 9398 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"), "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)", "movie_genre" : "Animation|Comedy|Musical", "year" : 2001, "budget" : 10092 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"), "movie" : "Kaboom", "movie_genre" : "Comedy|Sci-Fi", "year" : 2011, "budget" : 17434 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"), "movie" : "Ironclads", "movie_genre" : "Drama|Romance|War", "year" : 1985, "budget" : 12669 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"), "movie" : "Balloonatic, The", "movie_genre" : "Comedy", "year" : 2004, "budget" : 13863 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"), "movie" : "Islands in the Stream", "movie_genre" : "Drama", "year" : 2010, "budget" : 16218 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"), "movie" : "Trailer Park Boys", "movie_genre" : "Comedy|Crime", "year" : 1994, "budget" : 19703 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"), "movie" : "Park Avenue: Money, Power and the American Dream", "movie_genre" : "Documentary", "year" : 2002, "budget" : 16808 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"), "movie" : "Wonderful World of the Brothers Grimm, The", "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance", "year" : 2003, "budget" : 17901 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"), "movie" : "Casual Relations", "movie_genre" : "Drama", "year" : 2005, "budget" : 16490 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"), "movie" : "Paradise Now", "movie_genre" : "Crime|Drama|Thriller|War", "year" : 2012, "budget" : 11984 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"), "movie" : "Calendar Girls", "movie_genre" : "Comedy", "year" : 1993, "budget" : 16511 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"), "movie" : "Father of My Children, The (Le père de mes enfants)", "movie_genre" : "Drama", "year" : 2005, "budget" : 18843 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"), "movie" : "Man-Thing", "movie_genre" : "Action|Horror|Sci-Fi", "year" : 1996, "budget" : 19562 }
+Type "it" for more
+> db.movie.find({$nor: [{"year": 2000, "budget": 10000}]}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d0"),
+        "movie" : "Alyce Kills",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1989,
+        "budget" : 14172
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d1"),
+        "movie" : "Christmas in Connecticut",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 1995,
+        "budget" : 15629
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d5"),
+        "movie" : "Gambler, The",
+        "movie_genre" : "Drama",
+        "year" : 1996,
+        "budget" : 13016
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d8"),
+        "movie" : "Kaboom",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2011,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d9"),
+        "movie" : "Ironclads",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1985,
+        "budget" : 12669
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e0"),
+        "movie" : "Paradise Now",
+        "movie_genre" : "Crime|Drama|Thriller|War",
+        "year" : 2012,
+        "budget" : 11984
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e1"),
+        "movie" : "Calendar Girls",
+        "movie_genre" : "Comedy",
+        "year" : 1993,
+        "budget" : 16511
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e3"),
+        "movie" : "Man-Thing",
+        "movie_genre" : "Action|Horror|Sci-Fi",
+        "year" : 1996,
+        "budget" : 19562
+}
+Type "it" for more
+> db.movie.find({"year": {$in: [2000,2001, 2002, 2003,2004, 2005, 2006, 2007, 2008, 2009, 2010]}})
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"), "movie" : "Killer Meteors, The (Feng yu shuang liu xing)", "movie_genre" : "Action|Thriller", "year" : 2003, "budget" : 12626 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"), "movie" : "On the Riviera", "movie_genre" : "Comedy|Musical", "year" : 2008, "budget" : 9637 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"), "movie" : "Nueba Yol", "movie_genre" : "Comedy|Drama", "year" : 2002, "budget" : 9398 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"), "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)", "movie_genre" : "Animation|Comedy|Musical", "year" : 2001, "budget" : 10092 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"), "movie" : "Balloonatic, The", "movie_genre" : "Comedy", "year" : 2004, "budget" : 13863 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"), "movie" : "Islands in the Stream", "movie_genre" : "Drama", "year" : 2010, "budget" : 16218 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"), "movie" : "Park Avenue: Money, Power and the American Dream", "movie_genre" : "Documentary", "year" : 2002, "budget" : 16808 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"), "movie" : "Wonderful World of the Brothers Grimm, The", "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance", "year" : 2003, "budget" : 17901 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"), "movie" : "Casual Relations", "movie_genre" : "Drama", "year" : 2005, "budget" : 16490 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"), "movie" : "Father of My Children, The (Le père de mes enfants)", "movie_genre" : "Drama", "year" : 2005, "budget" : 18843 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"), "movie" : "Canon", "movie_genre" : "Animation", "year" : 2006, "budget" : 17160 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"), "movie" : "Room at the Top", "movie_genre" : "Drama", "year" : 2008, "budget" : 10936 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"), "movie" : "ATL", "movie_genre" : "Drama", "year" : 2007, "budget" : 16417 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"), "movie" : "Times of Harvey Milk, The", "movie_genre" : "Documentary", "year" : 2008, "budget" : 15074 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"), "movie" : "9/11", "movie_genre" : "Documentary", "year" : 2006, "budget" : 10980 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"), "movie" : "Rugrats Go Wild!", "movie_genre" : "Adventure|Animation|Children|Comedy", "year" : 2001, "budget" : 11088 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"), "movie" : "Carny", "movie_genre" : "Drama", "year" : 2007, "budget" : 16190 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"), "movie" : "London - The Modern Babylon ", "movie_genre" : "Documentary", "year" : 2009, "budget" : 16220 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"), "movie" : "Calling Dr. Gillespie", "movie_genre" : "Crime|Drama|Thriller", "year" : 2002, "budget" : 13665 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1f7"), "movie" : "Sadie Thompson", "movie_genre" : "Drama", "year" : 2004, "budget" : 17297 }
+Type "it" for more
+> db.movie.find({"year": {$in: [2000,2001, 2002, 2003,2004, 2005, 2006, 2007, 2008, 2009, 2010]}}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d2"),
+        "movie" : "Killer Meteors, The (Feng yu shuang liu xing)",
+        "movie_genre" : "Action|Thriller",
+        "year" : 2003,
+        "budget" : 12626
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d3"),
+        "movie" : "On the Riviera",
+        "movie_genre" : "Comedy|Musical",
+        "year" : 2008,
+        "budget" : 9637
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d6"),
+        "movie" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 9398
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d7"),
+        "movie" : "Eight Crazy Nights (Adam Sandler's Eight Crazy Nights)",
+        "movie_genre" : "Animation|Comedy|Musical",
+        "year" : 2001,
+        "budget" : 10092
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1df"),
+        "movie" : "Casual Relations",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 16490
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e2"),
+        "movie" : "Father of My Children, The (Le père de mes enfants)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18843
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e6"),
+        "movie" : "Canon",
+        "movie_genre" : "Animation",
+        "year" : 2006,
+        "budget" : 17160
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1e8"),
+        "movie" : "Room at the Top",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 10936
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ec"),
+        "movie" : "Times of Harvey Milk, The",
+        "movie_genre" : "Documentary",
+        "year" : 2008,
+        "budget" : 15074
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f0"),
+        "movie" : "Rugrats Go Wild!",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "year" : 2001,
+        "budget" : 11088
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f2"),
+        "movie" : "Carny",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f4"),
+        "movie" : "London - The Modern Babylon ",
+        "movie_genre" : "Documentary",
+        "year" : 2009,
+        "budget" : 16220
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f6"),
+        "movie" : "Calling Dr. Gillespie",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "year" : 2002,
+        "budget" : 13665
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1f7"),
+        "movie" : "Sadie Thompson",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 17297
+}
+Type "it" for more
+>
+>
+>
+>
+>
+>
+> db.movie.find().sort({year: 1}).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2a9"),
+        "movie" : "Beer Wars",
+        "movie_genre" : "Documentary",
+        "year" : 1950,
+        "budget" : 9107
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d34b"),
+        "movie" : "Rita, Sue and Bob Too!",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1960,
+        "budget" : 19412
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2de"),
+        "movie" : "Kid Brother, The",
+        "movie_genre" : "Children|Comedy|Romance",
+        "year" : 1964,
+        "budget" : 17128
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4be"),
+        "movie" : "Wind",
+        "movie_genre" : "Action|Romance",
+        "year" : 1965,
+        "budget" : 17823
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d371"),
+        "movie" : "Ten Canoes",
+        "movie_genre" : "Adventure|Comedy|Drama|War",
+        "year" : 1966,
+        "budget" : 18658
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d433"),
+        "movie" : "Sex Drive",
+        "movie_genre" : "Comedy",
+        "year" : 1966,
+        "budget" : 14604
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d248"),
+        "movie" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "year" : 1967,
+        "budget" : 17940
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ba"),
+        "movie" : "I Spit on Your Grave",
+        "movie_genre" : "Crime|Horror|Thriller",
+        "year" : 1967,
+        "budget" : 14632
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d510"),
+        "movie" : "Tournament, The",
+        "movie_genre" : "Action",
+        "year" : 1967,
+        "budget" : 13687
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2c7"),
+        "movie" : "Hidden Blade, The (Kakushi ken oni no tsume)",
+        "movie_genre" : "Action|Drama|Romance",
+        "year" : 1968,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d244"),
+        "movie" : "Good Job:  Stories of the FDNY, A",
+        "movie_genre" : "Documentary",
+        "year" : 1970,
+        "budget" : 18840
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d27e"),
+        "movie" : "Avenging Angelo",
+        "movie_genre" : "Action|Comedy|Crime",
+        "year" : 1971,
+        "budget" : 17585
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3b6"),
+        "movie" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "year" : 1972,
+        "budget" : 9608
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ef"),
+        "movie" : "Hobbit, The",
+        "movie_genre" : "Animation|Children|Fantasy",
+        "year" : 1972,
+        "budget" : 14509
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4f0"),
+        "movie" : "Clockwatchers",
+        "movie_genre" : "Comedy",
+        "year" : 1972,
+        "budget" : 15890
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2ca"),
+        "movie" : "Trip, The",
+        "movie_genre" : "Drama",
+        "year" : 1974,
+        "budget" : 18392
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d45a"),
+        "movie" : "Hebrew Hammer, The",
+        "movie_genre" : "Comedy",
+        "year" : 1975,
+        "budget" : 19264
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ac"),
+        "movie" : "Eclisse, L' (Eclipse)",
+        "movie_genre" : "Drama",
+        "year" : 1976,
+        "budget" : 15452
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d552"),
+        "movie" : "Hamlet",
+        "movie_genre" : "Drama",
+        "year" : 1977,
+        "budget" : 19535
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d425"),
+        "movie" : "Fear City: A Family-Style Comedy (La cité de la peur)",
+        "movie_genre" : "Comedy",
+        "year" : 1981,
+        "budget" : 9727
+}
+Type "it" for more
+> db.movie.find().sort({year: 1}).limit(50.)pretty()
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:42
+> db.movie.find().sort({year: 1}).limit(50).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2a9"),
+        "movie" : "Beer Wars",
+        "movie_genre" : "Documentary",
+        "year" : 1950,
+        "budget" : 9107
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d34b"),
+        "movie" : "Rita, Sue and Bob Too!",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1960,
+        "budget" : 19412
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2de"),
+        "movie" : "Kid Brother, The",
+        "movie_genre" : "Children|Comedy|Romance",
+        "year" : 1964,
+        "budget" : 17128
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4be"),
+        "movie" : "Wind",
+        "movie_genre" : "Action|Romance",
+        "year" : 1965,
+        "budget" : 17823
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d371"),
+        "movie" : "Ten Canoes",
+        "movie_genre" : "Adventure|Comedy|Drama|War",
+        "year" : 1966,
+        "budget" : 18658
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d433"),
+        "movie" : "Sex Drive",
+        "movie_genre" : "Comedy",
+        "year" : 1966,
+        "budget" : 14604
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d248"),
+        "movie" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "year" : 1967,
+        "budget" : 17940
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ba"),
+        "movie" : "I Spit on Your Grave",
+        "movie_genre" : "Crime|Horror|Thriller",
+        "year" : 1967,
+        "budget" : 14632
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d510"),
+        "movie" : "Tournament, The",
+        "movie_genre" : "Action",
+        "year" : 1967,
+        "budget" : 13687
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2c7"),
+        "movie" : "Hidden Blade, The (Kakushi ken oni no tsume)",
+        "movie_genre" : "Action|Drama|Romance",
+        "year" : 1968,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d244"),
+        "movie" : "Good Job:  Stories of the FDNY, A",
+        "movie_genre" : "Documentary",
+        "year" : 1970,
+        "budget" : 18840
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d27e"),
+        "movie" : "Avenging Angelo",
+        "movie_genre" : "Action|Comedy|Crime",
+        "year" : 1971,
+        "budget" : 17585
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3b6"),
+        "movie" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "year" : 1972,
+        "budget" : 9608
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4f0"),
+        "movie" : "Clockwatchers",
+        "movie_genre" : "Comedy",
+        "year" : 1972,
+        "budget" : 15890
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ef"),
+        "movie" : "Hobbit, The",
+        "movie_genre" : "Animation|Children|Fantasy",
+        "year" : 1972,
+        "budget" : 14509
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2ca"),
+        "movie" : "Trip, The",
+        "movie_genre" : "Drama",
+        "year" : 1974,
+        "budget" : 18392
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d45a"),
+        "movie" : "Hebrew Hammer, The",
+        "movie_genre" : "Comedy",
+        "year" : 1975,
+        "budget" : 19264
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ac"),
+        "movie" : "Eclisse, L' (Eclipse)",
+        "movie_genre" : "Drama",
+        "year" : 1976,
+        "budget" : 15452
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d552"),
+        "movie" : "Hamlet",
+        "movie_genre" : "Drama",
+        "year" : 1977,
+        "budget" : 19535
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d425"),
+        "movie" : "Fear City: A Family-Style Comedy (La cité de la peur)",
+        "movie_genre" : "Comedy",
+        "year" : 1981,
+        "budget" : 9727
+}
+Type "it" for more
+> db.movie.find().sort({year: 1}).sort({movie: 1}).limit(50).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4d9"),
+        "movie" : "+1",
+        "movie_genre" : "Sci-Fi|Thriller",
+        "year" : 2012,
+        "budget" : 18204
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2f9"),
+        "movie" : "10",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 2011,
+        "budget" : 14830
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4e8"),
+        "movie" : "1000 Eyes of Dr. Mabuse, The (Die 1000 Augen des Dr. Mabuse)",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "year" : 2010,
+        "budget" : 18126
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4c0"),
+        "movie" : "112 Weddings",
+        "movie_genre" : "Documentary|Romance",
+        "year" : 2007,
+        "budget" : 16269
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d423"),
+        "movie" : "12 Angry Men",
+        "movie_genre" : "Drama",
+        "year" : 1997,
+        "budget" : 18226
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ea"),
+        "movie" : "13B",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "year" : 2012,
+        "budget" : 19275
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d501"),
+        "movie" : "3 Penny Opera, The (Threepenny Opera, The) (3 Groschen-Oper, Die)",
+        "movie_genre" : "Crime|Musical",
+        "year" : 2008,
+        "budget" : 14595
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d21d"),
+        "movie" : "6th Day, The",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "year" : 2003,
+        "budget" : 11676
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1d4"),
+        "movie" : "7 Dwarves: The Forest Is Not Enough",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 12846
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d47d"),
+        "movie" : "7th Dawn, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "year" : 1988,
+        "budget" : 9599
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d349"),
+        "movie" : "8 Heads in a Duffel Bag",
+        "movie_genre" : "Comedy",
+        "year" : 2001,
+        "budget" : 14196
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d55c"),
+        "movie" : "88 Minutes",
+        "movie_genre" : "Crime|Drama|Mystery|Thriller",
+        "year" : 2009,
+        "budget" : 18064
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ef"),
+        "movie" : "9/11",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 10980
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ae"),
+        "movie" : "99 and 44/100% Dead",
+        "movie_genre" : "Action|Adventure|Comedy|Crime",
+        "year" : 2010,
+        "budget" : 16165
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2df"),
+        "movie" : "99 francs",
+        "movie_genre" : "Comedy",
+        "year" : 1984,
+        "budget" : 18001
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d30b"),
+        "movie" : "A Gathering of Eagles",
+        "movie_genre" : "Drama|Romance",
+        "year" : 2011,
+        "budget" : 15727
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d363"),
+        "movie" : "A Summer in St. Tropez",
+        "movie_genre" : "Drama|Romance",
+        "year" : 2011,
+        "budget" : 10548
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ad"),
+        "movie" : "A Via Láctea",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 12701
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1ea"),
+        "movie" : "ATL",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 16417
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d254"),
+        "movie" : "Abbott and Costello Go to Mars",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "year" : 2008,
+        "budget" : 17518
+}
+Type "it" for more
+> db.movie.find().sort({year: 1, movie: 1}).limit(50).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2a9"),
+        "movie" : "Beer Wars",
+        "movie_genre" : "Documentary",
+        "year" : 1950,
+        "budget" : 9107
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d34b"),
+        "movie" : "Rita, Sue and Bob Too!",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 1960,
+        "budget" : 19412
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2de"),
+        "movie" : "Kid Brother, The",
+        "movie_genre" : "Children|Comedy|Romance",
+        "year" : 1964,
+        "budget" : 17128
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4be"),
+        "movie" : "Wind",
+        "movie_genre" : "Action|Romance",
+        "year" : 1965,
+        "budget" : 17823
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d433"),
+        "movie" : "Sex Drive",
+        "movie_genre" : "Comedy",
+        "year" : 1966,
+        "budget" : 14604
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d371"),
+        "movie" : "Ten Canoes",
+        "movie_genre" : "Adventure|Comedy|Drama|War",
+        "year" : 1966,
+        "budget" : 18658
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ba"),
+        "movie" : "I Spit on Your Grave",
+        "movie_genre" : "Crime|Horror|Thriller",
+        "year" : 1967,
+        "budget" : 14632
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d248"),
+        "movie" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "year" : 1967,
+        "budget" : 17940
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d510"),
+        "movie" : "Tournament, The",
+        "movie_genre" : "Action",
+        "year" : 1967,
+        "budget" : 13687
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2c7"),
+        "movie" : "Hidden Blade, The (Kakushi ken oni no tsume)",
+        "movie_genre" : "Action|Drama|Romance",
+        "year" : 1968,
+        "budget" : 17434
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d244"),
+        "movie" : "Good Job:  Stories of the FDNY, A",
+        "movie_genre" : "Documentary",
+        "year" : 1970,
+        "budget" : 18840
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d27e"),
+        "movie" : "Avenging Angelo",
+        "movie_genre" : "Action|Comedy|Crime",
+        "year" : 1971,
+        "budget" : 17585
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3b6"),
+        "movie" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "year" : 1972,
+        "budget" : 9608
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4f0"),
+        "movie" : "Clockwatchers",
+        "movie_genre" : "Comedy",
+        "year" : 1972,
+        "budget" : 15890
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d3ef"),
+        "movie" : "Hobbit, The",
+        "movie_genre" : "Animation|Children|Fantasy",
+        "year" : 1972,
+        "budget" : 14509
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d2ca"),
+        "movie" : "Trip, The",
+        "movie_genre" : "Drama",
+        "year" : 1974,
+        "budget" : 18392
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d45a"),
+        "movie" : "Hebrew Hammer, The",
+        "movie_genre" : "Comedy",
+        "year" : 1975,
+        "budget" : 19264
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d4ac"),
+        "movie" : "Eclisse, L' (Eclipse)",
+        "movie_genre" : "Drama",
+        "year" : 1976,
+        "budget" : 15452
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d552"),
+        "movie" : "Hamlet",
+        "movie_genre" : "Drama",
+        "year" : 1977,
+        "budget" : 19535
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d425"),
+        "movie" : "Fear City: A Family-Style Comedy (La cité de la peur)",
+        "movie_genre" : "Comedy",
+        "year" : 1981,
+        "budget" : 9727
+}
+Type "it" for more
+> db.movie.find().skip(10).limit(5)
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"), "movie" : "Balloonatic, The", "movie_genre" : "Comedy", "year" : 2004, "budget" : 13863 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"), "movie" : "Islands in the Stream", "movie_genre" : "Drama", "year" : 2010, "budget" : 16218 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"), "movie" : "Trailer Park Boys", "movie_genre" : "Comedy|Crime", "year" : 1994, "budget" : 19703 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"), "movie" : "Park Avenue: Money, Power and the American Dream", "movie_genre" : "Documentary", "year" : 2002, "budget" : 16808 }
+{ "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"), "movie" : "Wonderful World of the Brothers Grimm, The", "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance", "year" : 2003, "budget" : 17901 }
+> db.movie.find().skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1da"),
+        "movie" : "Balloonatic, The",
+        "movie_genre" : "Comedy",
+        "year" : 2004,
+        "budget" : 13863
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1db"),
+        "movie" : "Islands in the Stream",
+        "movie_genre" : "Drama",
+        "year" : 2010,
+        "budget" : 16218
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dc"),
+        "movie" : "Trailer Park Boys",
+        "movie_genre" : "Comedy|Crime",
+        "year" : 1994,
+        "budget" : 19703
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1dd"),
+        "movie" : "Park Avenue: Money, Power and the American Dream",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 16808
+}
+{
+        "_id" : ObjectId("6138afb9c41c4dc18bd1d1de"),
+        "movie" : "Wonderful World of the Brothers Grimm, The",
+        "movie_genre" : "Adventure|Animation|Children|Comedy|Drama|Fantasy|Musical|Romance",
+        "year" : 2003,
+        "budget" : 17901
+}
+>
