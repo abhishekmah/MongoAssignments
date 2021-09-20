@@ -10,8 +10,17 @@ router.post('', async (req, res) => {
 })
 
 router.get('', async (req, res) => {
+    const page = +req.query.page || 1;
+    const size = +req.query.size || 10;
+
+    const offset = (page-1) * size; 
+
     const users = await User.find().lean().exec();
-    return res.status(200).json({ users })
+
+    const totalDocuments = await User.find().skip(offset).limit(size).countDocuments();
+    const totalPages = Math.ceil(totalDocuments / size);
+
+    return res.status(200).json({ users, totalPages })
 })
 
 router.get('/:id', async (req, res) => {

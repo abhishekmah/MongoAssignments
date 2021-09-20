@@ -3,7 +3,7 @@ const express = require("express")
 const Admin = require("../models/admins.model")
 
 const crudController = require("./crud.controller")
-// const transporter = require("../config/mail");
+const transporter = require("../config/mail");
 
 const router = express.Router();
 
@@ -15,18 +15,15 @@ router.post("", async(req, res) => {
 
     const admin = await Admin.create(req.body);
     const admins = await Admin.find().lean().exec();
-    var item;
-    admins.forEach(item)
-    console.log(item);
-    
-    
-    // await transporter.sendMail({
-    //     from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    //     to: "bar@example.com, baz@example.com", // list of receivers
-    //     subject: "Hello ✔", // Subject line
-    //     text: "Hello world?", // plain text body
-    //     html: "<b>Hello Abhishek here?</b>", // html body
-    // });
+    admins.map((el) => {
+        return transporter.sendMail({
+            from: '"Abhishek Mahato 👻" <mahato@gmail.com>', // sender address
+            to: el.email,// list of receivers
+            subject: `${req.body.first_name} ${req.body.last_name} has registered successfully`, // Subject line
+            text: `Hi ${el.first_name}, welcome him`, // plain text body
+            html: "<b>Hello world?</b>", // html body
+        })
+    })
 
     return res.status(201).json({ admin })
 })
