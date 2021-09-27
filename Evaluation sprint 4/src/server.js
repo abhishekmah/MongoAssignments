@@ -1,15 +1,18 @@
-const express = require("express");
-
-const connect = require("./config/db");
-
+const express = require('express');
 const app = express();
-app.use(express.json());
+const connect = require('./config/db')
 
-const userController = require("./controller/user.controller")
+const signupController = require('./controllers/signup.controller');
+const loginController = require('./controllers/login.controller')
+const lectureController = require('./controllers/lecture.controller')
+const studentsController = require('./controllers/student.controller')
 
-app.use("/users", userController);
-
-app.listen(2345, async() => {
-    await connect()
-    console.log("listening to port 2345");
+app.use(express.json())
+app.use("/signup", signupController),
+app.use("/login", loginController)
+app.use("/lectures", lectureController)
+app.use("/students", studentsController)
+app.listen(2345, async function () {
+    await connect();
+    console.log('listening on port 2345');
 })
